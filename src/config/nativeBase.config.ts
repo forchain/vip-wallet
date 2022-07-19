@@ -1,6 +1,6 @@
 const config = {
-  useSystemColorMode: false,
-  initialColorMode: 'dark',
+  useSystemColorMode: true,
+  initialColorMode: 'light',
   dependencies: {
     'linear-gradient': require('react-native-linear-gradient').default
   }
