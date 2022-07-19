@@ -11,7 +11,7 @@ export const Colors: Readonly<any> = Object.freeze({
   PLACEHOLDER: '#656880',
   //vip
   PRIMARY: '#F55771',
-  BG: '#FFFFFF',
+  BG: '#80ced6',
   BG_LIGHT: '#FFFFFF',
   FLORENCE_GREEN: '#6AFF81',
   TRANSPARENT: 'transparent',
