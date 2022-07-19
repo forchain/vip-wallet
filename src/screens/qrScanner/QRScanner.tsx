@@ -3,8 +3,8 @@ import { StyleSheet } from 'react-native';
 import { Image, Text, View } from 'native-base';
 import { useNavigation, useRoute } from '@react-navigation/native';
 import { NativeStackNavigationProp } from '@react-navigation/native-stack';
-import QRCodeScanner from 'react-native-qrcode-scanner';
-import { BarCodeReadEvent } from 'react-native-camera';
+// import QRCodeScanner from 'react-native-qrcode-scanner';
+// import { BarCodeReadEvent } from 'react-native-camera';
 import { CloseIcon, ThemeButton } from 'components';
 import { useTranslations } from 'hooks';
 import { Icons, screenHeight, screenWidth } from 'theme';
@@ -17,7 +17,7 @@ type QRScannerScreenNavigationProp = NativeStackNavigationProp<
 >;
 
 type Props = {
-  onSuccess: (data: BarCodeReadEvent) => void;
+  // onSuccess: (data: BarCodeReadEvent) => void;
 };
 
 const QRScanner: FC<Props> = () => {
@@ -41,20 +41,20 @@ const QRScanner: FC<Props> = () => {
       <View style={styles.closeIconContainer}>
         <CloseIcon />
       </View>
-      <QRCodeScanner
-        reactivate
-        reactivateTimeout={10000}
-        cameraStyle={styles.camera}
-        onRead={data => {
-          console.log('scanned data:', data);
-          onScanSuccess(data.data);
-        }}
-        cameraProps={{
-          captureAudio: false,
-          ratio: '1:1',
-          playSoundOnCapture: true
-        }}
-      />
+      {/*<QRCodeScanner*/}
+      {/*  reactivate*/}
+      {/*  reactivateTimeout={10000}*/}
+      {/*  cameraStyle={styles.camera}*/}
+      {/*  onRead={data => {*/}
+      {/*    console.log('scanned data:', data);*/}
+      {/*    onScanSuccess(data.data);*/}
+      {/*  }}*/}
+      {/*  cameraProps={{*/}
+      {/*    captureAudio: false,*/}
+      {/*    ratio: '1:1',*/}
+      {/*    playSoundOnCapture: true*/}
+      {/*  }}*/}
+      {/*/>*/}
       {/* </ImageBackground> */}
       <Image source={Icons.qrScannerSqIcon} style={styles.qrBg} alt="qrFrame" />
       <ThemeButton
