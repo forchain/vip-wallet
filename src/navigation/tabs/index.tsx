@@ -7,7 +7,8 @@ import {
 import TabBar from './TabBar';
 import Home from 'screens/home';
 import Settings from 'screens/settings';
-import Swap from 'screens/Swap/index.new';
+// import Swap from 'screens/Swap/index.new';
+import Swap from 'screens/Swap/index.debug';
 
 const styles = StyleSheet.create({
   investmentContainer: {
